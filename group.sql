@@ -26,4 +26,14 @@ GROUP BY (`office_address`);
 --Results = 29
 
 --3
+SELECT `exam_id` as `appello`, AVG(`vote`) as `media voto`
+FROM `exam_student`
+GROUP BY `exam_id`;
 
+--4
+SELECT COUNT(`id`) as `corsi di laurea`,
+`department_id` as `dipartimento`
+FROM `degrees`
+GROUP BY `department_id`;
+
+--Results = 12
